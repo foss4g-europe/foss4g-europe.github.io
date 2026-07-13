@@ -1,0 +1,283 @@
+/*
+Loosely based on the Hugo theme designed by Themefisher & developed by
+Gethugothemes (https://gethugothemes.com/) FOSS4GE has used for the latter year
+conference websites (see https://github.com/foss4g-europe)
+
+*/
+
+.container {
+    min-width: 300px!important;
+}
+
+.container {
+    width: 95%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container  {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width:1140px
+    }
+}
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #222222;
+  font-weight: 600; }
+
+h1 {
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 2.25rem; }
+
+h4 {
+  font-size: 1.6875rem; }
+
+h5 {
+  font-size: 1.375rem; }
+
+h6 {
+  font-size: 1.25rem; }
+
+p,
+li,
+blockquote,
+label {
+  font-size: 1rem;
+  line-height: 26px;
+  color: black;
+  margin-bottom: 0; }
+
+a {
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: bold;
+  color: #0b0c0c;
+  margin-bottom: 0; }
+  a:hover {
+    color: ee581e; }
+
+.shadow, .active a, .events.white .event-item:hover {
+  box-shadow: 0px 0px 30px 0px rgba(11, 29, 66, 0.15);
+}
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+  color: #7C857F;
+  font-style: italic;
+  font-weight: 400; }
+
+a {
+  transition: 0.2s ease; }
+
+a:focus,
+a:hover {
+  color: #7C857F;
+  text-decoration: none; }
+
+.section {
+  padding: 90px 0; }
+
+.section-title {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h3 {
+  margin-bottom: 20px;
+}
+.section-title.white h3,
+.section-title.white p {
+  color: #fff;
+}
+
+.page-title {
+  text-align: center; }
+
+.events {
+  position: relative;
+}
+
+.events.white .event-item {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.events .event-item {
+  background: #eae9ec;
+  padding: 7px;
+  margin-bottom: 30px;
+}
+
+.events .event-item .image {
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+@media (max-width: 575px) {
+  .events .event-item .image img {
+    width: 75% !important;
+  }
+}
+
+.events .event-item .image .primary-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f8faf8;
+  opacity: .95;
+  transition: .3s ease;
+}
+
+.events .event-item .image .fwd-links {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: .4s ease;
+}
+
+.events .event-item .image .fwd-links ul {
+  list-style-type: none;
+}
+
+@media (max-width: 1200px) {
+  .events .event-item .image .fwd-links ul {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.events .event-item .image .fwd-links ul li.list-inline-item:not(:last-child) {
+  margin-right: 7px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .events .event-item .image .fwd-links ul li.list-inline-item:not(:last-child) {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .events .event-item .image .fwd-links ul li.list-inline-item:last-child {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.events .event-item .image .fwd-links ul li a {
+  display: block;
+  text-align: center;
+}
+
+.events .event-item .image .fwd-links ul li a i {
+  font-size: .9375rem;
+  color: #fff;
+  line-height: 50px;
+}
+
+.events .event-item .image .fwd-links ul li a:hover {
+  background: #fff;
+}
+
+.events .event-item .image .fwd-links ul li a:hover i {
+  color: #222222;
+}
+
+.events .event-item .image:hover .primary-overlay {
+  top: 0;
+}
+
+.events .event-item .image:hover .fwd-links {
+  top: 0;
+}
+
+.events .event-item .content h5 a {
+  font-size: 22px;
+  color: #222222;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.events .event-item .content h5 a:hover {
+  color: #7C857F;
+}
+
+.events .event-item .content p {
+  font-size: 0.875rem;
+  margin-bottom: 5px;
+}
+
+.events .container .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  padding-bottom: 40px;
+}
+
+p {
+  padding-bottom: 15px;
+}
+
+.text-center {
+    text-align: center!important
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
